@@ -1501,6 +1501,8 @@ GDScriptTokenizer::Token GDScriptTokenizerText::scan() {
 			return make_token(Token::QUESTION_MARK);
 		case '`':
 			return make_token(Token::BACKTICK);
+		case u'→':
+			return make_token(Token::FORWARD_ARROW);
 
 		// Parens.
 		case '(':
